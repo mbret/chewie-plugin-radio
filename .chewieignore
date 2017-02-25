@@ -1,0 +1,5 @@
+# ignored path for the plugin synchronization
+# everything else except chewie's default glob is copied
+.dev/**
+.idea/**
+.git/**

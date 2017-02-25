@@ -1,0 +1,19 @@
+{
+  "name": "chewie-plugin-radio",
+  "version": "0.0.1",
+  "description": "Play radio from web sources",
+  "author": "Maxime Bret",
+  "scripts": {
+    "start": "node .dev/index.js",
+    "start:debug": "cross-env DEBUG=chewie* node .dev/index.js"
+  },
+  "dependencies": {
+    "node-schedule": "^1.1.1",
+    "lodash": "^2.4.1"
+  },
+  "devDependencies": {
+    "cross-env": "^3.1.4",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "chewie-system": "https://github.com/mbret/chewie-system"
+  }
+}
