@@ -5,11 +5,11 @@ module.exports = {
     description: myPackage.description,
     version: myPackage.version,
     author: myPackage.author,
-    pluginInstance: "./plugin.js",
+    pluginInstance: "./lib/plugin.js",
     modules: [
         {
             id: "startRadio",
-            module: "./module.js",
+            module: "./lib/module.js",
             name: 'Start radio',
             type: 'task',
             optionsConfig: [
