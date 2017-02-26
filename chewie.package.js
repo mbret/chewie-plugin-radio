@@ -33,7 +33,7 @@ module.exports = {
         },
         {
             id: "stopRadio",
-            module: "./module.js",
+            module: "./lib/module.js",
             name: 'Stop radio',
             type: 'task',
             optionsConfig: [],
