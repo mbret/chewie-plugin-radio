@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Play radio from web sources",
   "author": "Maxime Bret",
+  "main": "./lib/plugin.js",
   "scripts": {
     "start": "node .dev/index.js",
     "start:debug": "cross-env DEBUG=chewie* node .dev/index.js"
@@ -15,5 +16,40 @@
     "cross-env": "^3.1.4",
     "gulp": "github:gulpjs/gulp#4.0",
     "chewie-system": "https://github.com/mbret/chewie-system"
+  },
+  "chewie": {
+    "modules": [
+      {
+        "id": "startRadio",
+        "module": "./lib/module.js",
+        "name": "Start radio",
+        "type": "task",
+        "optionsConfig": [
+          {
+            "name": "radioName",
+            "label": "Radio",
+            "type": "select",
+            "choices": [
+              {
+                "label": "NRJ",
+                "value": "nrj"
+              },
+              {
+                "label": "France Inter",
+                "value": "franceInter"
+              }
+            ],
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "stopRadio",
+        "module": "./lib/module.js",
+        "name": "Stop radio",
+        "type": "task",
+        "optionsConfig": []
+      }
+    ]
   }
 }
