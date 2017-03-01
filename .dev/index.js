@@ -11,12 +11,12 @@ chewie.start({
     settings: {
         bootstrap: {
             bootstrap: function(chewie, done) {
-                chewie.repositoriesHelper.installPluginFromDisk(__dirname + "/..", {reinstall: true})
+                chewie.repositoriesHelper.reinstallPluginFromDisk(__dirname + "/..")
                     .then(() => done())
                     .catch(done);
             }
         },
-        forcePluginsSynchronizeAtStartup: true,
+        alwaysSynchronizePlugins: true,
         system: {
             tmpDir: "./.chewie/.tmp",
             appDataPath: "./.chewie"
