@@ -9,7 +9,6 @@
     "start:debug": "cross-env DEBUG=chewie* node .dev/index.js"
   },
   "dependencies": {
-    "node-schedule": "^1.1.1",
     "lodash": "^2.4.1"
   },
   "devDependencies": {
@@ -21,7 +20,7 @@
     "modules": [
       {
         "id": "startRadio",
-        "module": "./lib/module.js",
+        "module": "./lib/start-radio-module.js",
         "name": "Start radio",
         "type": "task",
         "optionsConfig": [
@@ -45,7 +44,7 @@
       },
       {
         "id": "stopRadio",
-        "module": "./lib/module.js",
+        "module": "./lib/stop-radio-module.js",
         "name": "Stop radio",
         "type": "task",
         "optionsConfig": []
